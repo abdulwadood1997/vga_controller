@@ -1,0 +1,17 @@
+#####################################################
+### SPARTAN-3E STARTER KIT BOARD CONSTRAINTS FILE
+#####################################################
+#
+# in PROCESSES  / Implement Design  (Right CLick) / Properties:  Allow unmatched LOC constraints
+#
+
+# ==== Clock inputs (CLK) ====
+NET "clk" LOC = "C9" | IOSTANDARD = LVCMOS33 ;
+#NET "CLK" PERIOD = 20.0ns HIGH 40%;
+
+# ==== VGA Port (VGA) ====
+NET "vga_blue" LOC = "G15" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "vga_green" LOC = "H15" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "hsync" LOC = "F15" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "vga_red" LOC = "H14" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
+NET "vsync" LOC = "F14" | IOSTANDARD = LVTTL | DRIVE = 8 | SLEW = FAST ;
