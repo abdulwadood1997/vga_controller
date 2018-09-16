@@ -1,0 +1,10 @@
+1. Whats the input and output clock for vga controller?
+2. What pixel data i.e red, green, blue u r sending out?
+3. What image u r trying to display?
+4. Whats the resolution of output image and display monitor?
+
+
+1. The input clock to main module is 50Mhz but the controller works on 25Mhz clock. We have made a frequency divider to half the frequency of clock. At its output is used to process the vga controller
+2. We are sending 1's to vga_red, green and blue signals, to display white color.
+3. Just a white color screen.
+4. The output image is 640*480 but the display monitor is 16:9 wide 1920*1080. But we changed the settings still nothing appears. Is the code written is correct or not?
